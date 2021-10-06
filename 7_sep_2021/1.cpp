@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void main()
+int main()
 {
     double angle, hip;
     cout << "Enter the hypotenuse value: ";
@@ -18,4 +18,6 @@ void main()
 
     cout << "Perimeter: " << x + y + hip << '\n';
     cout << "Area: " << (x * y) / 2.0 << '\n';
+    
+    return 0;
 }
