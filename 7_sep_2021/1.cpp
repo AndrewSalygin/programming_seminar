@@ -7,14 +7,14 @@ using namespace std;
 
 int main()
 {
-    double angle, hip;
+    double angle, hyp;
     cout << "Enter the hypotenuse value: ";
-    cin >> hip;
+    cin >> hyp;
     cout << "Enter the angle value: ";
     cin >> angle;
 
-    double x = hip * cos(angle * M_PI / 180.0); //One radian is equivalent to 180/PI degrees. 
-    double y = hip * sin(angle * M_PI / 180.0); // 1 rad = 180/PI deg => n deg = PI/180 * n
+    double x = hyp * cos(angle * M_PI / 180.0); //One radian is equivalent to 180/PI degrees. 
+    double y = hyp * sin(angle * M_PI / 180.0); // 1 rad = 180/PI deg => n deg = PI/180 * n
 
     cout << "Perimeter: " << x + y + hip << '\n';
     cout << "Area: " << (x * y) / 2.0 << '\n';
