@@ -7,6 +7,6 @@ int main()
 {
     cout << acos(-1) << '\n';
     cout << asin(1) * 2 << '\n';
-    cout << atan(0) * 2;
+    cout << atan(1) * 4;
     return 0;
 }
