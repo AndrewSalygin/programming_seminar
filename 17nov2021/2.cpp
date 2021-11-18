@@ -3,9 +3,11 @@
 #include <iomanip>
 using namespace std;
 
+const double pi = acos(-1);
+
 double area_circle(double &r)
 {
-    return acos(-1)*(r*r);
+    return pi*(r*r);
 }
 double area_square(double &a)
 {
@@ -29,11 +31,14 @@ int main()
 
     double eps = 10e-6;
 
-    if (area_circle(r) + eps < area_square(a))
+    double area_crcl = area_circle(r);
+    double area_sqr = area_square(a);
+
+    if (area_crcl + eps < area_sqr)
     {
         cout << "Площадь круга меньше площади квадрата";
     }
-    else if (area_square(a) + eps < area_circle(r))
+    else if (area_sqr + eps < area_crcl)
     {
         cout << "Площадь квадрата меньше площади круга";
     }
@@ -43,4 +48,3 @@ int main()
     }
     return 0;
 }
-
