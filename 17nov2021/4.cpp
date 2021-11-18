@@ -3,7 +3,7 @@
 #include <iomanip>
 using namespace std;
 
-bool correctness(const double &a, const double &b, const double &eps)
+bool correctness(double &a, double &b, double &eps)
 {
     if ((a * b) + eps < 0)
     {
@@ -13,17 +13,17 @@ bool correctness(const double &a, const double &b, const double &eps)
     return true;
 }
 
-double geometric_average(const double &a, const double &b)
+double geometric_average(double &a, double &b)
 {
     return sqrt(a*b);
 }
 
-double arithmetic_average(const double &a, const double &b)
+double arithmetic_average(double &a, double &b)
 {
     return (a * b) / 2;
 }
 
-bool f(const double &a, const double &b, const double &eps)
+bool f(double &a, double &b, double &eps)
 {
     if (a > b + eps)
     {

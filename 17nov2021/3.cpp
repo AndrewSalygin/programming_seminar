@@ -3,7 +3,7 @@
 #include <iomanip>
 using namespace std;
 
-bool f(double &a, const double &eps)
+bool f(double &a, double &eps)
 {
     if (a + eps > 0)
     {

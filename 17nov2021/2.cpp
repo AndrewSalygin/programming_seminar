@@ -3,11 +3,11 @@
 #include <iomanip>
 using namespace std;
 
-double area_circle(const double &r)
+double area_circle(double &r)
 {
     return acos(-1)*(r*r);
 }
-double area_square(const double &a)
+double area_square(double &a)
 {
     return a*a;
 }
