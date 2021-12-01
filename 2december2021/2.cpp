@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main()
@@ -15,7 +16,7 @@ int main()
         i++;
     }
 
-    cout << s;
+    cout << fixed << setprecision(12) << s;
     return 0;
 }
 
